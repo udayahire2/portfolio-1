@@ -17,7 +17,7 @@ export default function HackathonsSection() {
             <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
           </div>
           <div className="flex flex-col gap-y-3 items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">I like building things</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">I like building things</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
               During my time in university, I attended {DATA.hackathons.length}+
               hackathons. People from around the country would come together and
@@ -27,7 +27,7 @@ export default function HackathonsSection() {
         </div>
         <Timeline>
           {DATA.hackathons.map((hackathon) => (
-            <TimelineItem key={hackathon.title + hackathon.dates} className="w-full flex items-start justify-between gap-10">
+            <TimelineItem key={hackathon.title + hackathon.dates} className="flex w-full items-start justify-between gap-4 sm:gap-10">
               <TimelineConnectItem className="flex items-start justify-center">
                 {hackathon.image ? (
                   <img
@@ -50,7 +50,7 @@ export default function HackathonsSection() {
                   <p className="text-sm text-muted-foreground">{hackathon.location}</p>
                 )}
                 {hackathon.description && (
-                  <p className="text-sm text-muted-foreground leading-relaxed wrap-break-word">
+                  <p className="wrap-break-word text-sm leading-relaxed text-muted-foreground">
                     {hackathon.description}
                   </p>
                 )}
