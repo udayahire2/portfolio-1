@@ -33,9 +33,19 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
-    "Design Engineer bridging the gap between design and engineering. I love building minimal, calm, and highly aesthetic user interfaces.",
-  summary:
-    "I specialize in product-grade UI/UX, focusing on flat surfaces, predictable spacing, and accessible interactions. With a deep passion for the 'liquid' feel of modern web animations, I craft scalable applications using React, Next.js, and Framer Motion. I believe that a UI should not just look like a template—it should feel like a premium SaaS product. I am constantly exploring new visual metaphors and refining my craft to bring modern, engaging digital experiences to life.",
+  "Frontend developer focused on building clean, responsive, and user-friendly web applications using modern web technologies.",
+
+animatedRoles: [
+  "Frontend Developer",
+  "Web Developer",
+  "UI Developer",
+],
+
+descriptionSuffix:
+  "focused on building responsive web applications and practical digital products.",
+
+summary:
+  "I am a frontend developer who enjoys building modern, responsive web applications with a strong focus on usability and performance. My work mainly involves developing clean user interfaces using React, Next.js, and TailwindCSS.\n\nI focus on writing maintainable code, creating reusable components, and translating design concepts into functional web products. I enjoy solving real problems through web applications and continuously improving my development skills.\n\nCurrently, I am exploring better ways to build scalable frontend architectures, improve application performance, and create useful tools that make digital experiences simpler and more efficient.",
   avatarUrl: "https://avatars.githubusercontent.com/u/166685625?v=4",
   skills: [
     { name: "React", icon: ReactLight },
@@ -180,7 +190,7 @@ export const DATA = {
       dates: "Jan 2025 - Present",
       active: true,
       description:
-        "A highly reusable, maintainable, and developer-friendly component library adhering to strict visual and motion rules for a calm, professional interface.",
+        "A reusable component library designed to help developers build clean and consistent user interfaces faster.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -210,7 +220,7 @@ export const DATA = {
       dates: "June 2025 - Nov 2025",
       active: false,
       description:
-        "Designed and developed a minimal, highly aesthetic developer portfolio template focusing on calm ui and smooth transitions.",
+        "A web platform designed to help students access academic resources more easily. The project focuses on organizing study materials and simplifying the process of finding important educational content.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -227,6 +237,63 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/udayahire2/nmu",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Portfolio",
+      href: "https://github.com/udayahire2/uday-portfolio",
+      dates: "June 2025 - Nov 2025",
+      active: true,
+      description:
+        "Build a Portfolio Templater For Developer and UIUX Designer",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Lenis",
+        "GSAP",
+        "Framer Motion",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://udayahireexe.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/udayahire2/nmu",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Local Govern Panchayat Management",
+      href: "https://github.com/udayahire2/uday-portfolio",
+      dates: "June 2025 - Nov 2025",
+      active: true,
+      description:
+  "A web-based management system designed to help local village administration manage records and services such as taxes, certificates, government schemes, and citizen information more efficiently.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MYSQL",
+        
+      ],
+      links: [
+       
+        {
+          type: "Source",
+          href: "https://github.com/udayahire2/gram-panchayat",
           icon: <Icons.github className="size-3" />,
         },
       ],
