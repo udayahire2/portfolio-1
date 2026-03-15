@@ -17,6 +17,7 @@ import { Tailwindcss } from "@/components/ui/svgs/tailwindcss";
 import { Figma } from "@/components/ui/svgs/figma";
 import { Framer } from "@/components/ui/svgs/framer";
 import { UIUX } from "@/components/ui/svgs/uiux";
+import { Cpp } from "@/components/ui/svgs/cpp";
 import SSC from "../assets/scc.png";
 import NMU from "../assets/nmu.png";
 
@@ -46,6 +47,7 @@ export const DATA = {
     { name: "TailwindCSS", icon: Tailwindcss },
     { name: "Figma", icon: Figma },
     { name: "UI/UX Design", icon: UIUX },
+    { name: "C++", icon: Cpp },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -143,13 +145,13 @@ export const DATA = {
   education: [
     {
       school: "SSC",
-      href: "https://www.ssvpspoly.ac.in/",
+      href: "https://mahahsscboard.in/",
       degree: "10th",
       logo: SSC,
       logoWrapperClassName: "bg-white p-0.5",
       logoClassName: "scale-110 object-cover",
-      start: "2022",
-      end: "2025",
+      start: "2021",
+      end: "2022",
     },  
     {
       school: "SSVPS Polytechnic",
@@ -168,7 +170,7 @@ export const DATA = {
       logo: NMU,
       logoWrapperClassName: "bg-white p-1",
       start: "2025",
-      end: "Present",
+      end: "present",
     }
   ],
   projects: [
