@@ -21,7 +21,7 @@ export default function ContactSection() {
       </div>
       <div className="relative flex flex-col items-center gap-6 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Let&apos;s Create Something Extraordinary
+          Let&apos;s Connect
         </h2>
         <p className="mx-auto max-w-xl text-muted-foreground text-lg sm:text-xl text-balance leading-relaxed">
           I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 

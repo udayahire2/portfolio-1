@@ -34,7 +34,7 @@ export const DATA = {
     "Frontend Developer",
     "UI/UX Designer",
     "Problem Solver",
-    "Web Developer",
+    "Student",
   ],
 
   descriptionSuffix:
@@ -83,7 +83,7 @@ export const DATA = {
       },
       Youtube: {
         name: "Youtube",
-        url: "https://youtube.com/@udayahire",
+        url: "https://youtube.com/@codewithuday2025",
         icon: Icons.youtube,
         navbar: true,
       },
@@ -100,7 +100,7 @@ export const DATA = {
       company: "Sumago Infotech Private Limited",
       href: "https://example.com",
       badges: [],
-      location: "Nashik, Maharashtra, India",
+      location: "Remote",
       title: "Web Developement",
       logoUrl: "/lime.svg",
       start: "May 2024",
@@ -109,11 +109,11 @@ export const DATA = {
         "Worked on polished marketing and dashboard interfaces, converted Figma layouts into responsive Next.js components, and refined interaction details across shared UI primitives.",
     },
     {
-      company: "NovaStack",
+      company: "Acmegrade PVT",
       href: "https://example.com",
       badges: [],
       location: "Remote",
-      title: "Frontend Intern",
+      title: "Web Develope MERN",
       logoUrl: "/splunk.svg",
       start: "Jan 2024",
       end: "Apr 2024",
@@ -269,5 +269,60 @@ export const DATA = {
       image: "",
       video: "",
     }
+  ],
+  design: [
+    {
+      title: "UDX UI Kit Components",
+      href: "#",
+      dates: "December 2025 - Present",
+      active: true,
+      description:
+        "A modern Navigation Thats look Premium and calm supports dark and light mode.",
+      technologies: [
+        "Figma",
+        
+      ],
+      links: [
+        {
+          type: "Prototype",
+          href: "#Live",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "File",
+          href: "#file",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Portfolio Landing Page",
+      href: "#source",
+      dates: "March 2026 - Present ",
+      active: true,
+      description:
+        "Beautiful Light theme Portfolio Desinged for Design Engineer.",
+      technologies: [
+        "Figma",
+        "React"
+      ],
+      links: [
+        {
+          type: "Prototype",
+          href: "#live",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "file",
+          href: "#file",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    
   ],
 } as const;
