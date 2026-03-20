@@ -20,7 +20,8 @@ import { UIUX } from "@/components/ui/svgs/uiux";
 import { Cpp } from "@/components/ui/svgs/cpp";
 import SSC from "../assets/scc.png";
 import NMU from "../assets/nmu.png";
-
+import Sumago from ".././assets/sumago.png";
+import Acmegrade from '../assets/acmegrade.png'
 export const DATA = {
   name: "Uday Ahire",
   initials: "UA",
@@ -71,20 +72,8 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/udayahire",
+        url: "https://linkedin.com/in/uday-ahire-0855b22b4",
         icon: Icons.linkedin,
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/udayahire",
-        icon: Icons.x,
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://youtube.com/@codewithuday2025",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
@@ -97,28 +86,28 @@ export const DATA = {
   },
   internships: [
     {
-      company: "Sumago Infotech Private Limited",
-      href: "https://example.com",
+      company: "Sumago Infotech Pvt. Ltd.",
+      href: "https://sumagoinfotech.com/home",
       badges: [],
       location: "Remote",
       title: "Web Developement",
-      logoUrl: "/lime.svg",
-      start: "May 2024",
-      end: "Aug 2024",
+      logoUrl: Sumago,
+      start: "Aug 2024",
+      end: "Nov 2024",
       description:
-        "Worked on polished marketing and dashboard interfaces, converted Figma layouts into responsive Next.js components, and refined interaction details across shared UI primitives.",
+        "Learned and applied core web development concepts including HTML, CSS, JavaScript, and PHP. Built basic web pages and dynamic components, gaining hands-on experience in frontend styling, form handling, and server-side scripting.",
     },
     {
       company: "Acmegrade PVT",
       href: "https://example.com",
       badges: [],
       location: "Remote",
-      title: "Web Develope MERN",
-      logoUrl: "/splunk.svg",
-      start: "Jan 2024",
-      end: "Apr 2024",
+      title: "Web Developement MERN",
+      logoUrl: Acmegrade,
+      start: "March 2026",
+      end: "Present",
       description:
-        "Built internal product screens with React and TailwindCSS, improved consistency inside the component library, and shipped accessibility fixes for form and navigation flows.",
+        "Currently learning and implementing MERN stack technologies (MongoDB, Express.js, React, Node.js). Working on building full-stack applications, understanding REST APIs, and developing reusable frontend components.",
     },
   ],
   education: [
