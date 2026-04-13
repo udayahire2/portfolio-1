@@ -38,9 +38,6 @@ export default function Navbar() {
             className="flex items-center gap-2.5 transition-opacity hover:opacity-80"
           >
             <BrandLogo className="size-5" />
-            <span className="text-sm font-semibold tracking-tight text-foreground">
-              {DATA.name.split(" ")[0]}
-            </span>
           </Link>
 
           <nav className="hidden items-center gap-5 md:flex">
@@ -69,15 +66,6 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          {isHomePage && (
-            <Link
-              href="/blog"
-              className="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground md:block"
-            >
-              Blog
-            </Link>
-          )}
-
           <div className="mx-2 hidden h-4 w-px bg-border/40 md:block" />
 
           <div className="hidden items-center gap-1 sm:flex">
@@ -120,7 +108,7 @@ export default function Navbar() {
                 Navigation
               </p>
               <div className="flex flex-col gap-2">
-                {DATA.navbar.map((item) => {
+                {DATA.navbar.filter((item) => item.href !== "/blog").map((item) => {
                   const isActive =
                     item.href === "/"
                       ? pathname === "/"

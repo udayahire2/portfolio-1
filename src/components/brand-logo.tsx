@@ -5,47 +5,64 @@ type BrandLogoProps = {
   title?: string;
 };
 
+/**
+ * UA — Geometric Lettermark  ·  Uday Ahire
+ *
+ * Grid    : 48 × 48
+ * Stroke  : 5.5px (consistent across both glyphs)
+ * Baseline: y = 38.5
+ *
+ * U — built from three rects (left bar · right bar · base bridge)
+ * A — built from two polygon legs + one crossbar rect
+ * Both share a common baseline for visual unity.
+ */
 export function BrandLogo({
   className,
-  title = "Uday Ahire layout mark",
+  title = "Uday Ahire",
 }: BrandLogoProps) {
+  const sw = 5.5;  // stroke width
+  const r  = 2;    // corner radius
+
   return (
     <svg
-      viewBox="0 0 96 96"
+      viewBox="0 0 48 48"
       fill="none"
       role="img"
       aria-label={title}
-      className={cn("size-10", className)}
+      className={cn("size-8", className)}
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        x="10"
-        y="10"
-        width="76"
-        height="76"
-        rx="24"
-        fill="currentColor"
-        opacity="0.04"
-      />
-      <rect
-        x="24"
-        y="24"
-        width="14"
-        height="48"
-        rx="7"
-        fill="currentColor"
-      />
-      <rect
-        x="46"
-        y="24"
-        width="26"
-        height="12"
-        rx="6"
-        fill="currentColor"
-      />
-      <path
-        d="M54 40H64C68.418 40 72 43.582 72 48V55.5C72 57.091 71.526 58.646 70.638 59.966L62.12 72H54C49.582 72 46 68.418 46 64V48C46 43.582 49.582 40 54 40Z"
+      {/* ── U ─────────────────────────────────────────────
+           Left bar  : x1=1    → x2=6.5   | y=6→38.5
+           Right bar : x1=15.5 → x2=21    | y=6→38.5
+           Base span : x1=1    → x2=21    | y=33→38.5
+           (base overlaps bottom of both bars → unified arch)
+      ──────────────────────────────────────────────────── */}
+      {/* U left bar */}
+      <rect x="1" y="6" width={sw} height="32.5" rx={r} fill="currentColor" />
+      {/* U right bar */}
+      <rect x="15.5" y="6" width={sw} height="32.5" rx={r} fill="currentColor" />
+      {/* U base bridge */}
+      <rect x="1" y="33" width="20" height={sw} rx={r} fill="currentColor" />
+
+      {/* ── A ─────────────────────────────────────────────
+           Apex  : (34.5, 6)
+           Left foot  : (26, 38.5)  right foot: (43, 38.5)
+           Leg width mirrors U stroke weight optically
+           Crossbar at y=22 → 27.5 (golden proportion on A height)
+      ──────────────────────────────────────────────────── */}
+      {/* A left leg */}
+      <polygon
+        points="26,38.5 31.5,38.5 37,6 31.5,6"
         fill="currentColor"
       />
+      {/* A right leg */}
+      <polygon
+        points="38,6 43,38.5 37.5,38.5 32,6"
+        fill="currentColor"
+      />
+      {/* A crossbar */}
+      <rect x="28.5" y="22.5" width="12" height={sw} rx={r} fill="currentColor" />
     </svg>
   );
 }

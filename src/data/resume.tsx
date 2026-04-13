@@ -261,7 +261,7 @@ export const DATA = {
   ],
   design: [
     {
-      title: "UDX UI Kit Components",
+      title: "UDX UI Kit",
       href: "#",
       dates: "December 2025 - Present",
       active: true,
@@ -269,7 +269,7 @@ export const DATA = {
         "A modern Navigation Thats look Premium and calm supports dark and light mode.",
       technologies: [
         "Figma",
-        
+
       ],
       links: [
         {
@@ -280,7 +280,7 @@ export const DATA = {
         {
           type: "File",
           href: "#file",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.figma className="size-3" />,
         },
       ],
       image: "",
@@ -306,12 +306,12 @@ export const DATA = {
         {
           type: "file",
           href: "#file",
-          icon: <Icons.github className="size-3" />,
+          icon: <Icons.figma className="size-3" />,
         },
       ],
       image: "",
       video: "",
     },
-    
+
   ],
 } as const;
